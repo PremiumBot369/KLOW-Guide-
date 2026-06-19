@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLOW 80mg Protocol — Premium Research Peptide Supplies</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap');
+
+  :root {
+    --black: #090C10;
+    --surface: #0F1318;
+    --surface2: #161C24;
+    --border: #1E2730;
+    --accent: #00E5C8;
+    --accent2: #005F54;
+    --text: #C8D6E0;
+    --muted: #5A6B78;
+    --white: #EDF2F5;
+    --danger: #FF4D6A;
+    --gold: #C9A84C;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(9,12,16,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 60px;
+  }
+
+  .nav-logo {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .nav-logo span { color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--accent); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 40px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(0,229,200,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 800;
+    line-height: 0.95;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .hero h1 .blend-name {
+    color: var(--accent);
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 18px;
+    color: var(--muted);
+    margin: 28px 0 48px;
+    max-width: 520px;
+    font-weight: 300;
+  }
+
+  .compound-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+  }
+
+  .compound-tag {
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  .compound-tag strong { color: var(--accent); font-weight: 500; }
+
+  .hero-scroll {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-scroll::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* DISCLAIMER */
+  .disclaimer {
+    background: rgba(255,77,106,0.06);
+    border: 1px solid rgba(255,77,106,0.2);
+    border-left: 3px solid var(--danger);
+    padding: 20px 28px;
+    margin: 0 40px;
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .disclaimer strong { color: var(--danger); }
+
+  /* SECTIONS */
+  section {
+    padding: 100px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+
+  .section-intro {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 600px;
+    margin-bottom: 56px;
+    font-weight: 300;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0 40px;
+  }
+
+  /* DOSAGE PROTOCOL */
+  .protocol-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2px;
+    background: var(--border);
+  }
+
+  .protocol-card {
+    background: var(--surface);
+    padding: 36px 32px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.2s;
+  }
+  .protocol-card:hover { background: var(--surface2); }
+
+  .protocol-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+  .protocol-card.beginner::before { background: #4A9EFF; }
+  .protocol-card.intermediate::before { background: var(--accent); }
+  .protocol-card.advanced::before { background: var(--gold); }
+
+  .protocol-level {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .beginner .protocol-level { color: #4A9EFF; }
+  .intermediate .protocol-level { color: var(--accent); }
+  .advanced .protocol-level { color: var(--gold); }
+
+  .protocol-dose {
+    font-family: 'Syne', sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .protocol-unit {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+  }
+
+  .protocol-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .protocol-details li {
+    display: flex;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  .protocol-details li .label {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--border);
+    min-width: 72px;
+    padding-top: 2px;
+  }
+
+  .protocol-details li .val {
+    color: var(--text);
+  }
+
+  /* TIMELINE */
+  .timeline {
+    position: relative;
+    padding-left: 24px;
+    border-left: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .timeline-item {
+    position: relative;
+    padding: 0 0 48px 40px;
+  }
+  .timeline-item:last-child { padding-bottom: 0; }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 9px;
+    height: 9px;
+    background: var(--accent2);
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+  }
+
+  .timeline-week {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .timeline-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .timeline-body {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  /* TABLE */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+  }
+
+  thead tr {
+    background: var(--surface2);
+    border-bottom: 2px solid var(--accent);
+  }
+
+  thead th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+  tbody tr:hover { background: var(--surface2); }
+  tbody tr:last-child { border-bottom: none; }
+
+  tbody td {
+    padding: 14px 20px;
+    color: var(--text);
+    vertical-align: top;
+  }
+
+  tbody td:first-child {
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  tbody td.highlight {
+    color: var(--accent);
+  }
+
+  /* RECONSTITUTION */
+  .recon-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .recon-step {
+    display: flex;
+    gap: 28px;
+    background: var(--surface);
+    padding: 28px 32px;
+    align-items: flex-start;
+    transition: background 0.2s;
+  }
+  .recon-step:hover { background: var(--surface2); }
+
+  .step-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--border);
+    line-height: 1;
+    min-width: 40px;
+  }
+
+  .step-content h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .step-content p {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* VIDEO LINKS */
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+
+  .video-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 28px;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.2s, background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .video-card:hover {
+    border-color: var(--accent);
+    background: var(--surface2);
+  }
+
+  .video-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,229,200,0.08);
+    border: 1px solid var(--accent2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--accent);
+    font-size: 14px;
+  }
+
+  .video-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+
+  .video-card p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .video-card .arrow {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .video-card:hover .arrow { opacity: 1; }
+
+  /* STUDIES */
+  .studies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .study-item {
+    background: var(--surface);
+    border-left: 2px solid var(--border);
+    padding: 24px 28px;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .study-item:hover {
+    border-left-color: var(--accent);
+    background: var(--surface2);
+  }
+
+  .study-compound {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    white-space: nowrap;
+    min-width: 80px;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  .study-info h4 {
+    font-size: 14px;
+    color: var(--white);
+    margin-bottom: 4px;
+    font-weight: 500;
+  }
+
+  .study-info p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .study-info .pmid {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--accent);
+    margin-top: 6px;
+  }
+
+  /* FOOTER */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+  .footer-brand span { color: var(--accent); }
+
+  .footer-note {
+    font-size: 11px;
+    color: var(--muted);
+    max-width: 480px;
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  /* ZINC NOTE */
+  .zinc-note {
+    background: rgba(201,168,76,0.06);
+    border: 1px solid rgba(201,168,76,0.2);
+    border-left: 3px solid var(--gold);
+    padding: 20px 28px;
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .zinc-note strong { color: var(--gold); }
+
+  @media (max-width: 680px) {
+    nav { padding: 0 20px; }
+    .nav-links { display: none; }
+    .hero, section { padding-left: 20px; padding-right: 20px; }
+    .disclaimer { margin: 0 20px; }
+    hr.divider { margin: 0 20px; }
+    footer { padding: 32px 20px; }
+    .footer-note { text-align: left; }
+    .recon-step { flex-direction: column; gap: 12px; }
+    .step-num { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Premium Research<span> Peptide</span> Supplies</div>
+  <ul class="nav-links">
+    <li><a href="#protocol">Protocol</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#reconstitution">Reconstitution</a></li>
+    <li><a href="#studies">Research</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="max-width:none; padding-top:140px;">
+  <div class="hero-eyebrow">Premium Research Peptide Supplies — Compound Overview</div>
+  <h1>
+    KLOW
+    <span class="blend-name">80mg Blend</span>
+  </h1>
+  <p class="hero-sub">A four-peptide research formulation targeting tissue repair, inflammation control, cellular regeneration, and skin remodelling via complementary biological pathways.</p>
+
+  <div class="compound-grid">
+    <div class="compound-tag"><strong>GHK-Cu</strong> &nbsp;50mg — Collagen & ECM remodelling</div>
+    <div class="compound-tag"><strong>BPC-157</strong> &nbsp;10mg — Tissue repair & angiogenesis</div>
+    <div class="compound-tag"><strong>TB-500</strong> &nbsp;10mg — Cell migration & recovery</div>
+    <div class="compound-tag"><strong>KPV</strong> &nbsp;10mg — Anti-inflammatory (NF-κB)</div>
+  </div>
+
+  <div class="hero-scroll">scroll to explore protocol</div>
+</section>
+
+<div class="disclaimer">
+  <strong>Research Use Only.</strong> This information is intended for educational and research purposes only. KLOW is not approved by the TGA or any regulatory authority for human use. All protocols referenced are community-derived and preclinical. This does not constitute medical advice. Consult a licensed healthcare professional before handling any research compound.
+</div>
+
+<hr class="divider" style="margin-top:60px;">
+
+<!-- PROTOCOL -->
+<section id="protocol">
+  <div class="section-label">Dosage Protocol</div>
+  <h2>Starting to Advanced</h2>
+  <p class="section-intro">All doses drawn on a U-100 insulin syringe from an 80mg vial reconstituted with 2mL bacteriostatic water (40mg/mL total concentration). Each unit = 0.4mg total blend.</p>
+
+  <div class="protocol-grid">
+
+    <div class="protocol-card beginner">
+      <div class="protocol-level">Beginner</div>
+      <div class="protocol-dose">5</div>
+      <div class="protocol-unit">units on U-100 syringe &nbsp;·&nbsp; 2mg total blend</div>
+      <ul class="protocol-details">
+        <li>
+          <span class="label">GHK-Cu</span>
+          <span class="val">1.25mg per dose</span>
+        </li>
+        <li>
+          <span class="label">BPC-157</span>
+          <span class="val">250mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">TB-500</span>
+          <span class="val">250mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">KPV</span>
+          <span class="val">250mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">Frequency</span>
+          <span class="val">5× per week</span>
+        </li>
+        <li>
+          <span class="label">Duration</span>
+          <span class="val">Weeks 1–2 (tolerance assessment)</span>
+        </li>
+        <li>
+          <span class="label">Vial yield</span>
+          <span class="val">~40 doses per vial</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="protocol-card intermediate">
+      <div class="protocol-level">Intermediate</div>
+      <div class="protocol-dose">10</div>
+      <div class="protocol-unit">units on U-100 syringe &nbsp;·&nbsp; 4mg total blend</div>
+      <ul class="protocol-details">
+        <li>
+          <span class="label">GHK-Cu</span>
+          <span class="val">2.5mg per dose</span>
+        </li>
+        <li>
+          <span class="label">BPC-157</span>
+          <span class="val">500mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">TB-500</span>
+          <span class="val">500mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">KPV</span>
+          <span class="val">500mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">Frequency</span>
+          <span class="val">5× per week (loading)</span>
+        </li>
+        <li>
+          <span class="label">Duration</span>
+          <span class="val">Weeks 3–8</span>
+        </li>
+        <li>
+          <span class="label">Vial yield</span>
+          <span class="val">~20 doses per vial</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="protocol-card advanced">
+      <div class="protocol-level">Advanced / Maintenance</div>
+      <div class="protocol-dose">10</div>
+      <div class="protocol-unit">units on U-100 syringe &nbsp;·&nbsp; 4mg total blend</div>
+      <ul class="protocol-details">
+        <li>
+          <span class="label">GHK-Cu</span>
+          <span class="val">2.5mg per dose</span>
+        </li>
+        <li>
+          <span class="label">BPC-157</span>
+          <span class="val">500mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">TB-500</span>
+          <span class="val">500mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">KPV</span>
+          <span class="val">500mcg per dose</span>
+        </li>
+        <li>
+          <span class="label">Frequency</span>
+          <span class="val">3× per week (maintenance)</span>
+        </li>
+        <li>
+          <span class="label">Duration</span>
+          <span class="val">Weeks 9–12, then cycle off</span>
+        </li>
+        <li>
+          <span class="label">Vial yield</span>
+          <span class="val">~20 doses per vial</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="zinc-note">
+    <strong>⚠ Zinc Supplementation Note:</strong> GHK-Cu contains copper. Extended use (8+ weeks) may deplete zinc levels. Community protocol recommends supplementing with 20–25mg elemental zinc daily during active cycles. Consider bloodwork before and after each cycle.
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-label">Research Timeline</div>
+  <h2>Protocol Timeframe</h2>
+  <p class="section-intro">Expected research observations based on community and preclinical data. Individual results in research models vary.</p>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-week">Week 1–2</div>
+      <div class="timeline-title">Tolerance Assessment — 5 units / 5× weekly</div>
+      <div class="timeline-body">Begin at half the standard dose to assess tolerance. Observe for any injection site sensitivity or systemic response. GHK-Cu may produce a subtle flushing response in some subjects during initial exposure. No significant regenerative effects expected at this stage.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-week">Week 3–4</div>
+      <div class="timeline-title">Loading Phase — 10 units / 5× weekly</div>
+      <div class="timeline-body">Step up to the standard 10-unit dose. BPC-157 and TB-500 begin supporting tissue repair signalling. KPV's anti-inflammatory action via NF-κB inhibition begins modulating inflammatory markers. Early observations in repair models typically emerge around week 3–4.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-week">Week 5–8</div>
+      <div class="timeline-title">Peak Loading — 10 units / 5× weekly</div>
+      <div class="timeline-body">Primary phase for tissue regeneration observations. GHK-Cu drives collagen synthesis and extracellular matrix remodelling. BPC-157 supports angiogenesis via VEGF upregulation. Research models typically show the most pronounced tissue repair markers during this window.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-week">Week 9–12</div>
+      <div class="timeline-title">Maintenance Phase — 10 units / 3× weekly</div>
+      <div class="timeline-body">Reduce frequency to 3× weekly to consolidate gains and reduce androgen receptor fatigue from sustained GHK-Cu exposure. Continued anti-aging and anti-inflammatory observations. Begin planning cycle-off timing.</div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-week">Week 12+ — Cycle Off</div>
+      <div class="timeline-title">Rest Period — 4–8 weeks off</div>
+      <div class="timeline-body">Complete cessation of the blend for 4–8 weeks. Allows receptor sensitivity to reset, particularly for GHK-Cu's copper-mediated pathways. Bloodwork recommended to assess copper/zinc balance before restarting. After rest, the cycle can be repeated from the loading phase.</div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- RECONSTITUTION TABLE -->
+<section id="reconstitution">
+  <div class="section-label">Reconstitution</div>
+  <h2>BAC Water & Dose Calculator</h2>
+  <p class="section-intro">80mg KLOW vial. Add bacteriostatic water slowly down the inside wall of the vial — never shake. Gently swirl until dissolved. Refrigerate immediately.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>BAC Water Added</th>
+          <th>Total Concentration</th>
+          <th>1 Unit (0.01mL)</th>
+          <th>5 Units (0.05mL)</th>
+          <th>10 Units (0.10mL)</th>
+          <th>15 Units (0.15mL)</th>
+          <th>20 Units (0.20mL)</th>
+          <th>Doses per Vial @ 10 units</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1mL</td>
+          <td>80mg/mL</td>
+          <td>800mcg</td>
+          <td>4mg</td>
+          <td class="highlight">8mg</td>
+          <td>12mg</td>
+          <td>16mg</td>
+          <td>10 doses</td>
+        </tr>
+        <tr>
+          <td>1.5mL</td>
+          <td>53.3mg/mL</td>
+          <td>533mcg</td>
+          <td>2.67mg</td>
+          <td class="highlight">5.33mg</td>
+          <td>8mg</td>
+          <td>10.67mg</td>
+          <td>15 doses</td>
+        </tr>
+        <tr style="background: rgba(0,229,200,0.04);">
+          <td><strong>2mL ✓ Recommended</strong></td>
+          <td>40mg/mL</td>
+          <td>400mcg</td>
+          <td>2mg</td>
+          <td class="highlight">4mg</td>
+          <td>6mg</td>
+          <td>8mg</td>
+          <td>20 doses</td>
+        </tr>
+        <tr>
+          <td>2.5mL</td>
+          <td>32mg/mL</td>
+          <td>320mcg</td>
+          <td>1.6mg</td>
+          <td class="highlight">3.2mg</td>
+          <td>4.8mg</td>
+          <td>6.4mg</td>
+          <td>25 doses</td>
+        </tr>
+        <tr>
+          <td>3mL</td>
+          <td>26.7mg/mL</td>
+          <td>267mcg</td>
+          <td>1.33mg</td>
+          <td class="highlight">2.67mg</td>
+          <td>4mg</td>
+          <td>5.33mg</td>
+          <td>30 doses</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:12px; color: var(--muted); margin-top:16px; font-family:'DM Mono',monospace;">All dose values are total blend weight. GHK-Cu is 62.5% of blend, BPC-157 / TB-500 / KPV each 12.5%. U-100 insulin syringe: 1mL barrel = 100 units. 10 units = 0.10mL.</p>
+
+  <div style="margin-top: 64px;">
+    <div class="section-label">Step-by-Step</div>
+    <h2 style="font-size:28px; margin-bottom:40px;">Reconstitution Instructions</h2>
+
+    <div class="recon-steps">
+      <div class="recon-step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Gather Equipment</h3>
+          <p>You will need: KLOW 80mg vial, bacteriostatic water (BAC water), 3mL sterile syringe for reconstitution, U-100 insulin syringes for dosing, alcohol prep swabs, and a sharps container.</p>
+        </div>
+      </div>
+      <div class="recon-step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Sterilise Rubber Stoppers</h3>
+          <p>Wipe the rubber stopper on the BAC water vial with an alcohol swab. Allow to air dry for 10–15 seconds. Repeat for the KLOW peptide vial. Use a fresh swab for each — never cross-contaminate.</p>
+        </div>
+      </div>
+      <div class="recon-step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Draw Bacteriostatic Water</h3>
+          <p>Draw 2mL of BAC water into your reconstitution syringe (recommended volume — see table above for alternatives). First inject an equal volume of air into the BAC water vial to equalise pressure, making drawing easier.</p>
+        </div>
+      </div>
+      <div class="recon-step">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Inject Into Peptide Vial</h3>
+          <p>Insert the needle into the KLOW vial at a slight angle. Aim the stream at the inside glass wall — not directly at the powder. Slowly depress the plunger. Never force the water directly onto the lyophilised cake.</p>
+        </div>
+      </div>
+      <div class="recon-step">
+        <div class="step-num">05</div>
+        <div class="step-content">
+          <h3>Dissolve — Never Shake</h3>
+          <p>Gently swirl the vial in slow circular motions until the powder is fully dissolved. The solution should appear clear to very slightly blue-tinted (from the copper in GHK-Cu). Do not shake — this can degrade peptide structure.</p>
+        </div>
+      </div>
+      <div class="recon-step">
+        <div class="step-num">06</div>
+        <div class="step-content">
+          <h3>Label & Refrigerate</h3>
+          <p>Label the vial with the reconstitution date. Store immediately in the refrigerator at 2–8°C. Reconstituted KLOW is stable for 4–6 weeks with BAC water when refrigerated. Do not freeze reconstituted vials — ice crystals damage peptide structure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- VIDEO TUTORIALS -->
+<section id="videos">
+  <div class="section-label">Video Guides</div>
+  <h2>Reconstitution Tutorials</h2>
+  <p class="section-intro">Step-by-step video walkthroughs for reconstituting and administering research peptides.</p>
+
+  <div class="video-grid">
+
+    <a class="video-card" href="https://www.youtube.com/watch?v=b08QwxZW0Ig" target="_blank" rel="noopener">
+      <div class="video-icon">▶</div>
+      <h3>Peptide Reconstitution Instructions</h3>
+      <p>A clear demonstration of how to reconstitute lyophilised peptides with bacteriostatic water from start to finish.</p>
+      <span class="arrow">Watch →</span>
+    </a>
+
+    <a class="video-card" href="https://www.youtube.com/watch?v=KQJxfVAsXfA" target="_blank" rel="noopener">
+      <div class="video-icon">▶</div>
+      <h3>Reconstituting Your Peptides — Self Administration</h3>
+      <p>A simple walkthrough on reconstitution with bacteriostatic water including injection technique for subcutaneous administration.</p>
+      <span class="arrow">Watch →</span>
+    </a>
+
+    <a class="video-card" href="https://www.youtube.com/watch?v=L65S1xmKY44" target="_blank" rel="noopener">
+      <div class="video-icon">▶</div>
+      <h3>Doctor Explains Correct Peptide Preparation & Injection</h3>
+      <p>Physician-guided walkthrough covering gear selection, reconstitution technique, and subcutaneous injection protocol.</p>
+      <span class="arrow">Watch →</span>
+    </a>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- STUDIES -->
+<section id="studies">
+  <div class="section-label">Research & Literature</div>
+  <h2>Published Studies</h2>
+  <p class="section-intro">Selected peer-reviewed research on the individual components of the KLOW blend. All links direct to PubMed or PMC indexed sources.</p>
+
+  <div class="studies-list">
+
+    <a class="study-item" href="https://pubmed.ncbi.nlm.nih.gov/25896189/" target="_blank" rel="noopener">
+      <span class="study-compound">GHK-Cu</span>
+      <div class="study-info">
+        <h4>GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration</h4>
+        <p>Reviews GHK-Cu's role in stimulating collagen, elastin, and glycosaminoglycan synthesis; wound healing; and anti-inflammatory signalling.</p>
+        <div class="pmid">PubMed PMID: 25896189</div>
+      </div>
+    </a>
+
+    <a class="study-item" href="https://pubmed.ncbi.nlm.nih.gov/27102802/" target="_blank" rel="noopener">
+      <span class="study-compound">GHK-Cu</span>
+      <div class="study-info">
+        <h4>GHK-Cu Reduces Inflammation and Oxidative Stress in NF-κB Pathways</h4>
+        <p>Demonstrates GHK-Cu's suppression of pro-inflammatory cytokines TNF-α and IL-6 via NF-κB p65 inhibition in macrophage cultures.</p>
+        <div class="pmid">PubMed PMID: 27102802</div>
+      </div>
+    </a>
+
+    <a class="study-item" href="https://pubmed.ncbi.nlm.nih.gov/24453419/" target="_blank" rel="noopener">
+      <span class="study-compound">BPC-157</span>
+      <div class="study-info">
+        <h4>BPC 157: A Review of Its Cytoprotective and Organ-Protective Properties</h4>
+        <p>Covers BPC-157's gastro-protective, tendon and ligament repair, nitric oxide modulation, and VEGF-driven angiogenesis in preclinical models.</p>
+        <div class="pmid">PubMed PMID: 24453419</div>
+      </div>
+    </a>
+
+    <a class="study-item" href="https://pubmed.ncbi.nlm.nih.gov/10633850/" target="_blank" rel="noopener">
+      <span class="study-compound">TB-500</span>
+      <div class="study-info">
+        <h4>Thymosin Beta-4 Accelerates Wound Healing (Philp et al.)</h4>
+        <p>Foundational study demonstrating TB-4's acceleration of dermal wound healing via actin-regulation, cell migration promotion, and angiogenesis induction.</p>
+        <div class="pmid">PubMed PMID: 10633850</div>
+      </div>
+    </a>
+
+    <a class="study-item" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4028659/" target="_blank" rel="noopener">
+      <span class="study-compound">TB-500</span>
+      <div class="study-info">
+        <h4>Thymosin β4: A Multi-Functional Regenerative Peptide — Basic Properties & Clinical Applications</h4>
+        <p>Comprehensive review of TB-4's regenerative properties across cardiac, ocular, CNS, and connective tissue repair research models.</p>
+        <div class="pmid">PMC: PMC4028659</div>
+      </div>
+    </a>
+
+    <a class="study-item" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8954814/" target="_blank" rel="noopener">
+      <span class="study-compound">KPV</span>
+      <div class="study-info">
+        <h4>Orally Targeted KPV Delivery via HA-Functionalized Nanoparticles Alleviates Ulcerative Colitis</h4>
+        <p>Demonstrates KPV's potent anti-inflammatory activity via NF-κB inhibition and cytokine suppression in mucosal inflammation models.</p>
+        <div class="pmid">PMC: PMC8954814</div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Premium Research<span> Peptide</span> Supplies</div>
+  <div class="footer-note">
+    For research use only. Not for human or veterinary use. Not approved by the TGA. All protocols are community-derived and for educational reference. Always consult a licensed healthcare professional.
+  </div>
+</footer>
+
+</body>
+</html>
